@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registartion Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Form Registar</legend>
+        <form action="http://www.webucator.com/course-demos/htm101/process-form.cfm" method="POST" >
+           Nome Utilizador: <input type ="text"id="username" name="username">
+           Password: <input type="password" id="pw" name="pw"> 
+           <br>
+           <br>
+           Male<input name="terms" id="terms" type="radio" name="gender" value="m">
+           Female<input name="terms" id="terms" type="radio" name="gender" value="f">
+           <br>
+           <br>
+           <select name="referral" id="referral">
+                <option value="0">--Please Choose--</option>
+               <option value="wom">Word of Mouth</option>
+               <option value="other">Other</option>
+           </select>
+           <br>
+           <br>
+           <select>
+               <optgroup label="Search Engine">
+                   <option value="Google">Google</option>
+                   <option value="Yahoo">Yahoo</option>~
+                   <option value="MSN">MSN</option>
+
+               </optgroup>
+               
+           </select>
+           <br>
+           <br>
+           <textarea name="comments" id="comments" cols="9" rows="4">
+
+           </textarea>
+           <br>
+           <br>
+           <button type="submit">Registar</button>
+           <button type="reset">Refresh</button>
+           
+        </form>
+    </fieldset>
+    
+</body>
+</html>
