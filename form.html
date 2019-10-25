@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORM</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <form method="POST" action="form.html">
+        <fieldset>
+            <legend>Personal Info</legend>
+            Name: <input type="text" pattern="[A-Z][a-z]+\s[A-Z][a-z]+" title="Por favor introduza um nome correto. Apenas Letras! Atenção nomes comecam por maisculas!" required>
+            <br>
+            <br>
+            <input type="radio" name="member" value="member">member
+            <br>
+            <input type="radio" name="on_member" value="on_member">on-member
+            <br>
+            <br>
+            Email: <input type="email">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Reservation info</legend>
+            <select name="facility" id="facility">
+                    <option value="0">--Facility--</option>
+                   <option value="badmington">Badmington</option>
+                   <option value="squash">Squash</option>
+                   <option value="racquetball">Racquetball</option>
+               </select>
+               <br>
+               <br>
+               Data | Hora: <input type="datetime-local" name="bdaytime">
+               <br>
+               <br>
+               I agree to the club’s reservation policy <input type="checkbox" value="agree">
+               <br>
+               <br>
+               <button type="submit">Submit</button>
+               
+        </fieldset>
+    </form>
+    
+</body>
+</html>
